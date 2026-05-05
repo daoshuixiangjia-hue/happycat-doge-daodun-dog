@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="description" content="哈基米闯关：躲避刀盾狗，爬到终点线。支持手机与键盘操作。" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#7ec8e3" />
+  <title>哈基米闯关</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <canvas id="game" aria-label="游戏画布"></canvas>
+
+    <div id="hud">
+      <div id="hud-inner">
+        <div id="mission">躲避刀盾狗，跑到终点线</div>
+        <div id="hud-row">
+          <div id="level-tag">第一关</div>
+          <div id="hint">键盘 ↑↓ · WASD · 拖动画面</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="overlay" class="panel">
+      <h1 id="overlay-title">哈基米闯关</h1>
+      <p id="overlay-desc">操纵 Happy 小猫爬到顶端，躲开刀盾。</p>
+      <button type="button" id="btn-start">开始游戏</button>
+    </div>
+
+    <div id="toast" class="hidden"></div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
